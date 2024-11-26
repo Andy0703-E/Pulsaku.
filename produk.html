@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulsaKu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body style="background: url(./bg.webp); background-size: cover; background-position: center; overflow: hidden;">
+    <nav class="bg-white shadow-md fixed top-0 w-full">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-red-500">PulsaKu.</a>
+
+            <!-- Menu -->
+            <div class="hidden md:flex space-x-6">
+                <a href="./index.html" class="text-gray-600 hover:text-red-500">Beranda</a>
+                <a href="./produk.html" class="text-gray-600 hover:text-red-500">Produk</a>
+                <a href="./tentang.html" class="text-gray-600 hover:text-red-500">Tentang Kami</a>
+                <a href="./kontak.html" class="text-gray-600 hover:text-red-500">Hubungi</a>
+            </div>
+
+            <!-- Tombol -->
+            <div class="hidden md:block">
+                <a href="#" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Beli Pulsa</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="./index.html" class="block py-2 px-4 text-gray-600 hover:text-red-500">Beranda</a>
+            <a href="./produk.html" class="block py-2 px-4 text-gray-600 hover:text-red-500">Produk</a>
+            <a href="./tentang.html" class="block py-2 px-4 text-gray-600 hover:text-red-500">Tentang Kami</a>
+            <a href="./kontak.html" class="block py-2 px-4 text-gray-600 hover:text-red-500">Hubungi</a>
+            <a href="https://wa.me/6281523803659?text=Saya Mau Beli Pulsa"
+                class="block py-2 px-4 text-white bg-red-500 hover:bg-red-600">Beli Pulsa</a>
+        </div>
+    </nav>
+    <div class="min-h-screen flex flex-col bg-black bg-opacity-50">
+        <!-- Konten Utama -->
+        <div class="container mx-auto px-4 py-12 flex-grow flex items-center justify-center">
+            <div class="text-center w-full">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-center w-full">
+                    <!-- Pulsa Produk -->
+                    <div
+                        class="bg-transparent shadow-2xl rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 w-full sm:h-[250px]">
+                        <div class="p-8 bg-opacity-80 backdrop-blur-md h-full flex flex-col justify-between">
+                            <h3 class="text-4xl font-semibold text-red-500 mb-4">Pulsa</h3>
+                            <p class="text-gray-100 mb-6">Harga bisa ditanyakan melalui WhatsApp.</p>
+                            <a href="https://wa.me/6281523803659?text=Saya%20Mau%20Beli%20Pulsa"
+                                class="w-full bg-red-500 text-white py-3 px-6 rounded text-center hover:bg-red-600 transition duration-300">
+                                Beli Pulsa Sekarang
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Kuota Produk -->
+                    <div
+                        class="bg-transparent shadow-2xl rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 w-full sm:h-[250px]">
+                        <div class="p-8 bg-opacity-80 backdrop-blur-md h-full flex flex-col justify-between">
+                            <h3 class="text-4xl font-semibold text-red-500 mb-4">Kuota</h3>
+                            <p class="text-gray-100 mb-6">Harga bisa ditanyakan melalui WhatsApp.</p>
+                            <a href="https://wa.me/6281523803659?text=Saya%20Mau%20Beli%20Kuota"
+                                class="w-full bg-red-500 text-white py-3 px-6 rounded text-center hover:bg-red-600 transition duration-300">
+                                Beli Kuota Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-gray-800 text-white py-6 fixed bottom-0 w-full">
+            <div class="mt-4 text-center text-sm text-gray-400">
+                © 2024 PulsaKu. Semua Hak Dilindungi.
+            </div>
+    </div>
+    </footer>
+
+    </div>
+    <script>
+        document.getElementById("mobile-menu-button").addEventListener("click", function () {
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+
+</html>
